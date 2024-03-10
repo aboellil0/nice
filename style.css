@@ -1,0 +1,177 @@
+:root {
+    --Soft-red: hsl(7, 99%, 70%);
+    --Yellow: hsl(51, 100%, 49%);
+    --Dark-desaturated-cyan: hsl(167, 40%, 24%);
+    --Dark-blue: hsl(198, 62%, 26%);
+    --Dark-moderate-cyan: hsl(168, 34%, 41%);
+    --Very-dark-desaturated-blue: hsl(212, 27%, 19%);
+    --Very-dark-grayish-blue: hsl(213, 9%, 39%);
+    --Dark-grayish-blue: hsl(232, 10%, 55%);
+    --Grayish-blue: hsl(210, 4%, 67%);
+    --White: hsl(0, 0%, 100%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Barlow", sans-serif;
+}
+
+.barlow-semibold {
+    font-family: "Barlow", sans-serif;
+}
+
+.barlow-semibold-italic {
+    font-family: "Barlow", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+header {
+    height: 800px;
+    background: url(../sunnyside-agency-landing-page-main/images/desktop/image-header.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.nav-item .nav-link {
+    color: var(--White);
+}
+
+.nav-item.contact .nav-link {
+    color: var(--Dark-desaturated-cyan);
+}
+
+.header-text {
+    color: var(--White);
+    font-size: 70px;
+    font-weight: 800;
+}
+
+.nav-item .px-4 {
+    background-color: var(--White);
+    transition: 0.5s;
+}
+
+.nav-item .px-4:hover {
+    background-color: #6fcefe;
+    color: var(--White);
+}
+
+.img-1 {
+    background: url(../sunnyside-agency-landing-page-main/images/desktop/image-transform.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.img-2 {
+    background: url(../sunnyside-agency-landing-page-main/images/desktop/image-stand-out.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.text-img-1 {
+    background: url(../sunnyside-agency-landing-page-main/images/desktop/image-graphic-design.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.text-img-2 {
+    background: url(../sunnyside-agency-landing-page-main/images/desktop/image-photography.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.text-1,
+.text-2,
+.img-1,
+.img-2,
+.text-img-1,
+.text-img-2 {
+    min-height: 700px;
+}
+
+.text-1 .d-flex,
+.text-2 .d-flex,
+.text-img-1 .d-flex,
+.text-img-2 .d-flex {
+    width: 70%;
+    aspect-ratio: 1;
+}
+
+.clients-test {
+    height: 700px;
+}
+
+@media (max-width: 768px) {
+    .navbar-nav {
+        align-items: center;
+    }
+    .nav-item .px-4 {
+        background-color: var(--Yellow);
+    }
+    .clients-test {
+        height: fit-content;
+    }
+    .clients-test .col-md-4.col-12 {
+        padding-bottom: 70px;
+    }
+    .clients-test .text-center.pb-md-5 {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+    .header-text {
+        font-size: 50px;
+        font-weight: 700;
+    }
+}
+
+footer {
+    height: 200px;
+    background-color: #8fd3c4;
+    color: var(--Dark-moderate-cyan);
+}
+
+footer .logo {
+    font-size: 27px;
+    font-weight: 800;
+}
+
+.text-1 .d-flex .learn-more,
+.text-2 .d-flex .learn-more {
+    text-decoration: none;
+    position: relative;
+    width: 100px;
+    text-align: center;
+}
+
+.text-1 .d-flex .learn-more::after,
+.text-2 .d-flex .learn-more::after {
+    position: absolute;
+    content: '';
+    height: 9px;
+    opacity: 0.2;
+    bottom: 0px;
+    border-radius: 50px;
+    margin: 0 auto;
+    left: 0;
+    width: 100%;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+
+.text-1 .d-flex .learn-more::after {
+    background: var(--Yellow);
+}
+
+.text-2 .d-flex .learn-more::after {
+    background: var(--Soft-red);
+}
+
+.text-1 .d-flex .learn-more:hover:after,
+.text-2 .d-flex .learn-more:hover:after {
+    opacity: 0.9;
+}
